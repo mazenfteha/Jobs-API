@@ -20,3 +20,14 @@ npm install && npm start
 * Send Response With Token 
 
 
+**Login User**   
+* validate : email, password in controller  
+* if email or password is missing , we will throw BadRequestError  
+* find user  
+* compare passwords with bcrypt and instance methods in schema  
+* if no user or password dosent mach ,we eill throw  unauthenticated error  
+* if correct generate token  
+* send response with user name and token  
+
+
+
