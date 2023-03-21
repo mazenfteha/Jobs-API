@@ -30,4 +30,9 @@ npm install && npm start
 * send response with user name and token  
 
 
+### Mongoose Errors  
+- Validation Errors  
+- Dublicate (Email)  
+- Cast Error
+
 
