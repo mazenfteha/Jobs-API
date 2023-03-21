@@ -35,4 +35,11 @@ npm install && npm start
 - Dublicate (Email)  
 - Cast Error
 
+### Security  
+## How we can protect our APIs => by install some packages and add them as middelware in our app  
+**Packages**:  
+- helmet  
+- cors  
+-xss-claean  
+- express-rate-limit  
 
