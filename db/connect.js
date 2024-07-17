@@ -6,6 +6,11 @@ const connectDB = (url) => {
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
+  }).then(() => {
+    console.log('Successfully connected')
+  }).catch(() => {
+    console.error('Failed to connect to the database')
+    process.exit(1)
   })
 }
 

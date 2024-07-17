@@ -4,14 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "cross-env NODE_ENV=development nodemon src/app.js",
+    "test": "cross-env NODE_ENV=test jest --watch --runInBand --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
+    "dotenv-flow": "^4.1.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "express-rate-limit": "^5.3.0",
